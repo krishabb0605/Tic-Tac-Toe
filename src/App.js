@@ -32,12 +32,12 @@ function App() {
     }
     return null;
   };
-  
+
   const handleClick = (i) => {
     if (sqareFill[i] || calculateWinner()) {
       return;
     }
-
+    console.log('Click !!');
     const newSqaure = sqareFill.slice();
     newSqaure[i] = nextTurn ? '0' : 'X';
     setsqareFill(newSqaure);
